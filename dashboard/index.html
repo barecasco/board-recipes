@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <title>{%title%}</title>
+        {%favicon%}
+        {%css%}
+        <style>
+            /* Dark theme for dropdowns */
+            .Select-control, .Select-menu-outer, .Select-option {
+                background-color: #374151 !important;
+                color: white !important;
+                border-color: #6b7280 !important;
+            }
+            
+            /* Dropdown selected value text */
+            .Select-value-label, .Select-placeholder, .Select-input > input {
+                color: white !important;
+            }
+            
+            /* Dropdown arrow */
+            .Select-arrow-zone, .Select-arrow {
+                color: white !important;
+                border-color: white transparent transparent !important;
+            }
+            
+            /* Dropdown options on hover */
+            .Select-option:hover {
+                background-color: #4b5563 !important;
+                color: white !important;
+            }
+            
+            /* Dropdown focused state */
+            .Select-control.is-focused {
+                border-color: #60a5fa !important;
+                box-shadow: 0 0 0 1px #60a5fa !important;
+            }
+            
+            /* Dark theme for DataTable filters */
+            .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner input {
+                background-color: #374151 !important;
+                color: white !important;
+                border-color: #6b7280 !important;
+            }
+            
+            /* DataTable header and cells */
+            .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+                background-color: #111111 !important;
+            }
+
+            .card {
+                background-color: #111111 !important;
+                border-color: #111111 !important;
+            }
+
+            .card-body {
+                background-color: #111111 !important;
+                color: white !important;
+            }
+
+            .card-title {
+                color: white !important;
+            }
+
+            /* For metric cards (the KPI cards) */
+            .card h4, .card p {
+                color: white !important;
+            }
+
+            .container-fluid {
+                background-color: #111111 !important;
+                padding-bottom: 80px;
+            }
+   
+        </style>
+    </head>
+    <body>
+        {%app_entry%}
+        <footer>
+            {%config%}
+            {%scripts%}
+            {%renderer%}
+        </footer>
+    </body>
+</html>
